@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/dc700a75c1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <h2 class="navbar-brand">Dash UI</h2>
+
+        <ul class="navbar">
+          <li class="nav-item active">
+            <a href="#" class="nav-link"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-home nav-icon icon-xs me-2"
+              >
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+              Dashboard</a
+            >
+          </li>
+          <li class="nav-item">
+            <div class="nav-heading">layouts & pages</div>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#"
+              class="nav-link has-arrow collapsed"
+              data-bs-target="#navPages"
+              data-bs-toggle="collapse"
+              aria-expanded="true"
+              aria-controls="navPages"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-layers nav-icon icon-xs me-2"
+              >
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+              Pages
+            </a>
+            <div id="navPages" class="collapse" data-bs-parent="#sideNavbar">
+              <ul class="nav flex-column nav-lv1">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Profile</a>
+                </li>
+                <li class="nav-item">                  <a href="#" class="nav-link">Setting</a>
+                </li>
+                <li class="nav-item">                  <a href="#" class="nav-link">Billing</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Pricing</a>
+
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">404 Error</a>
+
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a
+              href=""
+              class="nav-link has-arrow collapsed"
+              data-bs-target="#navAuthentication"
+              data-bs-toggle="collapse"
+              aria-expanded="true"
+              aria-controls="navAuthentication"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-lock nav-icon icon-xs me-2"
+              >
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              Authentication
+            </a>
+            <div
+              id="navAuthentication"
+              class="collapse"
+              data-bs-parent="#sideNavbar"
+            >
+              <ul class="nav flex-column nav-lv1">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Sign In</a>
+
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Sign Up</a>
+
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Forget Password</a>
+
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link  collapsed">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-sidebar nav-icon icon-xs me-2"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="9" y1="3" x2="9" y2="21"></line>
+              </svg>
+              Layouts
+            </a>
+          </li>
+          <li class="nav-item">
+            <div class="nav-heading">UI Component</div>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link  collapsed">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-package nav-icon icon-xs me-2"
+              >
+                <line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line>
+                <path
+                  d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+                ></path>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+              </svg>
+              Components
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#"
+              class="nav-link has-arrow collapsed"
+              data-bs-target="#menuLevel"
+              data-bs-toggle="collapse"
+              aria-expanded="true"
+              aria-controls="menuLevel"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-corner-left-down nav-icon icon-xs me-2"
+              >
+                <polyline points="14 15 9 20 4 15"></polyline>
+                <path d="M20 4h-7a4 4 0 0 0-4 4v12"></path>
+              </svg>
+              Menu Level
+            </a>
+            <div id="menuLevel" class="collapse">
+              <ul class="nav flex-column nav-lv1">
+                <li class="nav-item">
+                  <a
+                    href="#"
+                    class="nav-link has-arrow collapsed"
+                    data-bs-toggle="collapse"
+                    aria-expanded="true"
+                    data-bs-target="#navMenuLevelSecond"
+                    aria-controls="navMenuLevelSecond"
+                    >Two Level</a
+                  >
+                  <div id="navMenuLevelSecond" class="collapse">
+                    <ul class="nav flex-column nav-lv2">
+                      <li class="nav-item">NavItem1</li>
+                      <li class="nav-item">NavItem2</li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="nav-item">
+                  <a
+                    href="#"
+                    class="nav-link has-arrow collapsed"
+                    data-bs-toggle="collapse"
+                    aria-expanded="true"
+                    data-bs-target="#navMenuLevelThired"
+                    aria-controls="navMenuLevelThired"
+                    >Three Level</a
+                  >
+                  <div id="navMenuLevelThired" class="collapse">
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a
+                          href="#"
+                          class="nav-link has-arrow collapsed"
+                          data-bs-toggle="collapse"
+                          aria-expanded="true"
+                          data-bs-target="#navChild"
+                          aria-controls="navChild"
+                          >NavItem1</a
+                        >
+                        <div class="collapse nav-child" id="navChild">
+                          <a href="#" class="nav-link">NavChildItem1</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">NavItem2</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+               
+                
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="nav-heading">documentation</div>
+          </li>
+          <li class="nav-item">
+            <a
+              href="
+          "
+              class="nav-link"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-clipboard nav-icon icon-xs me-2"
+              >
+                <path
+                  d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"
+                ></path>
+                <rect
+                  x="8"
+                  y="2"
+                  width="8"
+                  height="4"
+                  rx="1"
+                  ry="1"
+                ></rect>
+              </svg>
+              Docs
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-pull-request nav-icon icon-xs me-2"><circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M13 6h3a2 2 0 0 1 2 2v7"></path><line x1="6" y1="9" x2="6" y2="21"></line></svg>
+              Changes
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <div class="navbar d-flex justify-content-between align-items-center">
+          <div class="left d-flex align-items-center">
+            <div class="nav-toggle">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="input-wrap">
+              <input type="text" placeholder="Search" />
+            </div>
+          </div>
+          <div class="right d-flex align-items-center">
+            <div class="noti-wrap">
+              <i class="fa-regular fa-bell"></i>
+            </div>
+            <div class="avt">
+              <img src="./img/avatar-1.jpg" alt="" />
+              <div class="status"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-section bg-primary pt-10 pb-21">
+          <div class="container-fluid mt-n22 px-6">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-12">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="mb-2 mb-lg-0">
+                    <h3 class="mb-2 mb-lg-0 text-white">Project</h3>
+                  </div>
+                  <button class="btn btn-white">Create New Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-list">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xl-3 col-lg-6 col-md-12 col-12 mt-6">
+                <div class="card">
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-3"
+                    >
+                      <h4>Project</h4>
+                      <div
+                        class="icon-shape icon-md bg-light-primary text-primary rounded-2"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-briefcase"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div>
+                      <h1>18</h1>
+                      <p>
+                        <span class="text-dark"> 2 </span>
+                        completed
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6 col-md-12 col-12 mt-6">
+                <div class="card">
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-3"
+                    >
+                      <h4>Active Task</h4>
+                      <div
+                        class="icon-shape icon-md bg-light-primary text-primary rounded-2"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-list-ul"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div>
+                      <h1>132</h1>
+                      <p>
+                        <span class="text-dark"> 28 </span>
+                        completed
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6 col-md-12 col-12 mt-6">
+                <div class="card">
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-3"
+                    >
+                      <h4>Teams</h4>
+                      <div
+                        class="icon-shape icon-md bg-light-primary text-primary rounded-2"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-people-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"
+                          />
+                          <path
+                            d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div>
+                      <h1>12</h1>
+                      <p>
+                        <span class="text-dark"> 1 </span>
+                        completed
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6 col-md-12 col-12 mt-6">
+                <div class="card">
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-3"
+                    >
+                      <h4>Productivity</h4>
+                      <div
+                        class="icon-shape icon-md bg-light-primary text-primary rounded-2"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-bullseye"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                          />
+                          <path
+                            d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10zm0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"
+                          />
+                          <path
+                            d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"
+                          />
+                          <path
+                            d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div>
+                      <h1>76%</h1>
+                      <p>
+                        <span class="text-dark"> 5% </span>
+                        completed
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      const toggle = document.querySelector('.nav-toggle')
+      const content = document.querySelector('.content')
+      const sidebar = document.querySelector('.sidebar')
+
+      toggle.onclick = () => {
+        content.classList.toggle('active')
+        sidebar.classList.toggle('active')
+        
+      }
+
+    </script>
+  </body>
+</html>
